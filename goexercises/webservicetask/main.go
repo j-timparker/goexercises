@@ -51,7 +51,6 @@ func issueResponse(w http.ResponseWriter, responseCode int, responseResult strin
 		log.Fatal(err)
 	}
 	w.Header().Set("Content-Type", "application/json")
-	w.Header().Set("X-Powered-By", "chicken")
 	w.Write(json)
 }
 
